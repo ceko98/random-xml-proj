@@ -38,7 +38,9 @@
 				<button class="button" onclick="showMountains()">
 			Планини
 				</button>
-				<xsl:apply-templates/>
+				<div class="grid">
+					<xsl:apply-templates/>
+				</div>
 			</body>
 		</html>
 	</xsl:template>
@@ -111,7 +113,7 @@
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/shelterList">
-		<div id="shelterContainer" style="display:none;">
+		<div id="shelterContainer" class="not-preset">
 			<xsl:for-each select="/hutsInBG/shelterList/shelter/shelterInformation[id &lt; 34]">
 				<xsl:sort
 					select = "name" data-type="text"
@@ -164,7 +166,7 @@
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/mountainList">
-		<div id="mountainContainer" style="display:none;">
+		<div id="mountainContainer" class="not-preset">
 			<xsl:for-each select="/hutsInBG/mountainList/mountainInfo">
 				<xsl:variable name="rName">
 					<xsl:value-of select="mountainName"/>
