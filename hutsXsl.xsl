@@ -63,33 +63,33 @@
 							<xsl:value-of select="name"/>
 						</p>
 						<div class="info">
-							<div id="hutInfo">
+							<div class="text-box" id="hutInfo">
 								<p id="label">Планина</p>
 								<p>
 									<xsl:value-of select="mountain"/>
 								</p>
 								<p id="label">Капацитет</p>
-								<p>
+								<p class="delim-line">
 									<xsl:value-of select="capacity"/>
 								</p>
 							</div>
-							<div id="hutCoordinates">
+							<div class="text-box" id="hutCoordinates">
 								<p id="label">Надморска височина</p>
 								<p>
 									<xsl:value-of select="altitude"/>
 								</p>
 								<p id="label">GPS координати</p>
-								<p>
+								<p class="delim-line">
 									<xsl:value-of select="GPScoordinates"/>
 								</p>
 							</div>
-							<div id="extraHutInfo">
+							<div class="text-box" id="extraHutInfo">
 								<p id="label">Тел</p>
 								<p>
 									<xsl:value-of select="telephone"/>
 								</p>
 								<p id="label">Сайт</p>
-								<a href="{site/@href}">
+								<a class="delim-line" href="{site/@href}">
 									<xsl:value-of select="site"/>
 								</a>
 							</div>
@@ -111,58 +111,60 @@
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/shelterList">
-		<div id="shelterContainer" class="main-container" style="display:none;">
+		<div id="shelterContainer" style="display:none;">
 			<xsl:for-each select="/hutsInBG/shelterList/shelter/shelterInformation[id &lt; 34]">
 				<xsl:sort
 					select = "name" data-type="text"
 					order = "ascending">
 				</xsl:sort>
-				<div style="color:white;" class="shelter">
-
-					<img src="images/{id}.jpg"/>
-
-					<p id="shelterName">
-						<xsl:value-of select="name"/>
-					</p>
-
-					<div id="shelterInfo">
-						<p id="label">Планина</p>
-						<p>
-							<xsl:value-of select="mountain"/>
-						</p>
-						<p id="label">Сайт</p>
-						<a href="{site/@href}">
-							<xsl:value-of select="site"/>
-						</a>
+				<div class="main-container">
+					<div class="img">
+						<img src="images/{id}.jpg"/>
 					</div>
-					<div id="shelterCoordinates">
-						<p id="label">Надморска височина</p>
-						<p>
-							<xsl:value-of select="altitude"/>
+					<div class="infoPanel">
+						<p id="shelterName" class="name">
+							<xsl:value-of select="name"/>
 						</p>
-						<p id="label">GPS координати</p>
-						<p>
-							<xsl:value-of select="GPScoordinates"/>
-						</p>
-					</div>
-					<div class="dropdown">
-						<p id="label">Наблизо</p>
-						<div class="dropdown-content">
-							<xsl:for-each select="../nearbyList/nearby">
-								<p id="nearby">
-									<xsl:value-of select="."/>
+						<div class="info">
+							<div class="text-box" id="shelterInfo">
+								<p id="label">Планина</p>
+								<p>
+									<xsl:value-of select="mountain"/>
 								</p>
-							</xsl:for-each>
+								<p id="label">Сайт</p>
+								<a href="{site/@href}">
+									<xsl:value-of select="site"/>
+								</a>
+							</div>
+							<div class="text-box" id="shelterCoordinates">
+								<p id="label">Надморска височина</p>
+								<p>
+									<xsl:value-of select="altitude"/>
+								</p>
+								<p id="label">GPS координати</p>
+								<p>
+									<xsl:value-of select="GPScoordinates"/>
+								</p>
+							</div>
+						</div>
+						<div class="dropdown">
+							<p id="label">Наблизо</p>
+							<div class="dropdown-content">
+								<xsl:for-each select="../nearbyList/nearby">
+									<p id="nearby">
+										<xsl:value-of select="."/>
+									</p>
+								</xsl:for-each>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</xsl:for-each>
 		</div>
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/mountainList">
-		<div id="mountainContainer" class="main-container" style="display:none;">
+		<div id="mountainContainer" style="display:none;">
 			<xsl:for-each select="/hutsInBG/mountainList/mountainInfo">
 				<xsl:variable name="rName">
 					<xsl:value-of select="mountainName"/>
@@ -170,16 +172,16 @@
 				<xsl:variable name="rId">
 					<xsl:value-of select="moun/@mounIdRef"/>
 				</xsl:variable>
-
-				<div style="color:white;" class="mountain">
-
-					<p id="mountainLabel">
+				<div style="color:white;" class="main-container2">
+					<p class="name2" id="mountainLabel">
 						<xsl:value-of select="mountainName"/>
 					</p>
 					<div>
 						<xsl:for-each select="/hutsInBG/hutsList/hut/hutInformation[mountainId = $rId]">
-							<div style="color:white;" class="specialMountain">
-								<img src="images/{id}.jpg"/>
+							<div style="color:white;" class="semi-main2">
+								<div class="img">
+									<img src="images/{id}.jpg"/>
+								</div>
 								<div id="mounInfo">
 									<p id="hutName">
 										<xsl:value-of select="name"/>
@@ -220,12 +222,10 @@
 							</div>
 						</xsl:for-each>
 						<xsl:for-each select="/hutsInBG/shelterList/shelter/shelterInformation[mountainId = $rId]">
-
-							<div style="color:white;" class="specialMountain">
-
-								<img src="images/{id}.jpg"/>
-
-
+							<div style="color:white;" class="semi-main2">
+								<div class="img">
+									<img src="images/{id}.jpg"/>
+								</div>
 								<div id="mounInfoShelter">
 									<p id="shelterName">
 										<xsl:value-of select="name"/>
@@ -234,7 +234,6 @@
 									<a href="{site/@href}">
 										<xsl:value-of select="site"/>
 									</a>
-
 								</div>
 								<div id="hutContactsShelter">
 									<p id="label">Надморска височина</p>
@@ -246,11 +245,7 @@
 									<p>
 										<xsl:value-of select="GPScoordinates"/>
 									</p>
-
-
-
 								</div>
-
 								<div class="dropdown">
 									<p id="label">Наблизо</p>
 									<div class="dropdown-content">
@@ -262,7 +257,6 @@
 									</div>
 								</div>
 							</div>
-
 						</xsl:for-each>
 					</div>
 				</div>
