@@ -16,12 +16,18 @@ body {
     background-color: #074e07;
     padding: 0px;
     border-radius: 15px;
-    /* display: flex; */
+    display: flex;
 }
 
 .img img{
     height: 300px;
-    width: auto;     
+    width: auto;
+    border-radius: 15px;     
+}
+
+.infoPanel {
+    display: flex;
+    flex-direction: column;
 }
 
 p,

@@ -57,51 +57,54 @@
 					<div class="img">
 						<img src="images/{id}.jpg"/>
 					</div>
-					<p id="hutName">
-						<xsl:value-of select="name"/>
-					</p>
 
-					<div id="hutInfo">
-						<p id="label">Планина</p>
-						<p>
-							<xsl:value-of select="mountain"/>
+					<div class="infoPanel">
+						<p id="hutName" class="name">
+							<xsl:value-of select="name"/>
 						</p>
-						<p id="label">Капацитет</p>
-						<p>
-							<xsl:value-of select="capacity"/>
-						</p>
-					</div>
-					<div id="hutCoordinates">
-						<p id="label">Надморска височина</p>
-						<p>
-							<xsl:value-of select="altitude"/>
-						</p>
-						<p id="label">GPS координати</p>
-						<p>
-							<xsl:value-of select="GPScoordinates"/>
-						</p>
-					</div>
-					<div id="extraHutInfo">
-						<p id="label">Тел</p>
-						<p>
-							<xsl:value-of select="telephone"/>
-						</p>
-						<p id="label">Сайт</p>
-						<a href="{site/@href}">
-							<xsl:value-of select="site"/>
-						</a>
-					</div>
-					<div class="dropdown">
-						<p id="label">Наблизо</p>
-						<div class="dropdown-content">
-							<xsl:for-each select="../nearbyList/nearby">
-								<p id="faculty">
-									<xsl:value-of select="."/>
+						<div class="info">
+							<div id="hutInfo">
+								<p id="label">Планина</p>
+								<p>
+									<xsl:value-of select="mountain"/>
 								</p>
-							</xsl:for-each>
+								<p id="label">Капацитет</p>
+								<p>
+									<xsl:value-of select="capacity"/>
+								</p>
+							</div>
+							<div id="hutCoordinates">
+								<p id="label">Надморска височина</p>
+								<p>
+									<xsl:value-of select="altitude"/>
+								</p>
+								<p id="label">GPS координати</p>
+								<p>
+									<xsl:value-of select="GPScoordinates"/>
+								</p>
+							</div>
+							<div id="extraHutInfo">
+								<p id="label">Тел</p>
+								<p>
+									<xsl:value-of select="telephone"/>
+								</p>
+								<p id="label">Сайт</p>
+								<a href="{site/@href}">
+									<xsl:value-of select="site"/>
+								</a>
+							</div>
+							<div class="dropdown">
+								<p id="label">Наблизо</p>
+								<div class="dropdown-content">
+									<xsl:for-each select="../nearbyList/nearby">
+										<p id="faculty">
+											<xsl:value-of select="."/>
+										</p>
+									</xsl:for-each>
+								</div>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</xsl:for-each>
 		</div>
@@ -244,7 +247,7 @@
 										<xsl:value-of select="GPScoordinates"/>
 									</p>
 
-									
+
 
 								</div>
 
