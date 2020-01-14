@@ -75,6 +75,22 @@ p.name2 {
     font-weight: bold;
     text-overflow: ellipsis;
 }
+.idk-anymore {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.info2 p, a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.info2 {
+    display: flex;
+    flex-direction: row;
+}
 
 #label {
     font-weight: lighter;
@@ -176,14 +192,14 @@ button:focus {
 
 #shelterContacts,
 #site,
-#mounInfo,
+/* #mounInfo, */
 #hutContacts,
-#mounInfoShelter,
+/* #mounInfoShelter, */
 #hutContactsShelter {
     width: 250px;
     display: inline-block;
     margin-left: 20px;
     vertical-align: top;
     overflow: hidden;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
