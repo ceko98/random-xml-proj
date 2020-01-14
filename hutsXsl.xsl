@@ -93,15 +93,15 @@
 									<xsl:value-of select="site"/>
 								</a>
 							</div>
-							<div class="dropdown">
-								<p id="label">Наблизо</p>
-								<div class="dropdown-content">
-									<xsl:for-each select="../nearbyList/nearby">
-										<p id="faculty">
-											<xsl:value-of select="."/>
-										</p>
-									</xsl:for-each>
-								</div>
+						</div>
+						<div class="dropdown">
+							<p id="label">Наблизо</p>
+							<div class="dropdown-content">
+								<xsl:for-each select="../nearbyList/nearby">
+									<p id="faculty">
+										<xsl:value-of select="."/>
+									</p>
+								</xsl:for-each>
 							</div>
 						</div>
 					</div>
