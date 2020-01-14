@@ -1,0 +1,186 @@
+body {
+    background-color: #9fb67b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 55px;
+    text-align: center;
+    color: #117903;
+}
+
+.main-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #074e07;
+    padding: 0px;
+    border-radius: 15px;
+    /* display: flex; */
+}
+
+.img img{
+    height: 300px;
+    width: auto;     
+}
+
+p,
+a {
+    margin: 0px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+
+a {
+    color: white;
+}
+
+button:focus {
+    background-color: #07310e;
+}
+
+.button {
+    background-color: #074e07;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px 2px;
+    width: 33%;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .hut, */
+.shelter {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #074e07;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.mountain {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #074e07;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.specialShelter,
+.specialMountain {
+    width: 100%;
+    height: 225px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #0a350e;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hut img,
+.shelter img {
+    margin-right: 20px;
+    height: 300px;
+    width: 400px;
+    float: left;
+    border-radius: 15px;
+}
+
+.specialShelter img,
+.specialMountain img {
+    margin-right: 20px;
+    height: 220px;
+    width: 300px;
+    display: block;
+    float: left;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+#hutName {
+    font-size: 35px;
+    display: table-header-group;
+}
+
+#shelterName {
+    font-size: 30px;
+    display: table-header-group;
+}
+
+#label {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+#seatLabel {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+#mountainLabel {
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+#hutInfo,
+#extraShelterInfo,
+#hutCoordinates,
+#extraHutInfo,
+#shelterInfo,
+#shelterCoordinates,
+#extraShelterInfo {
+    width: 250px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+    vertical-align: top;
+    overflow: hidden;
+    position: relative;
+}
+
+#shelterInfo,
+#shelterContacts,
+#site,
+#mounInfo,
+#hutContacts,
+#mounInfoShelter,
+#hutContactsShelter {
+    width: 250px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 15px;
+}

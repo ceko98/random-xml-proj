@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="hutsXsl.xsl"?>
+<hutsInBG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="huts.xsd">
+	<hutsList>
+		<hut>
+			<hutInformation>
+				<name>Хижа Ехо</name>
+				<mountain>Стара планина</mountain>
+				<id>1</id>
+				<mountainId>201</mountainId>
+				<telephone>0885 994 129</telephone>
+				<GPScoordinates>42.77500, 24.48128</GPScoordinates>
+				<altitude>1645м</altitude>
+				<capacity>42 места</capacity>
+				<site href="https://planinite.site-bg.info/page1.php?id=4&amp;nom=26">planinite.site-bg.info</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>з-н Академик</nearby>
+				<nearby>хижа Вежен </nearby>
+				<nearby>хижа Козя стена</nearby>
+				<nearby>хижа Хайдушка песен </nearby>
+				<nearby>хижа Васильов</nearby>
+				<nearby>вр.Кавладан</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Козя стена</name>
+				<mountain>Стара планина</mountain>
+				<id>2</id>
+				<mountainId>201</mountainId>
+				<telephone>0882 96 6369</telephone>
+				<GPScoordinates>42.785379, 24.529390</GPScoordinates>
+				<altitude>1562м</altitude>
+				<capacity>92 места</capacity>
+				<site href="http://kozyastena.com/about.php">kozyastena.com/about.php</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>вр.Козя стена/1670м./</nearby>
+				<nearby>хижа Ехо</nearby>
+				<nearby>заслон Академик</nearby>
+				<nearby>хижа Хайдушка песен</nearby>
+				<nearby>хижа Дерменка</nearby>
+				<nearby>хижа Вежен</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Мазалат</name>
+				<mountain>Стара планина</mountain>
+				<id>3</id>
+				<mountainId>201</mountainId>
+				<telephone>0888 35 26 93</telephone>
+				<altitude>1523м</altitude>
+				<capacity>64 места</capacity>
+				<site href="http://planinar.org/%D1%85%D0%B8%D0%B6%D0%B0-%D0%BC%D0%B0%D0%B7%D0%B0%D0%BB%D0%B0%D1%82-2/">planinar.org</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>хижа Узана</nearby>
+				<nearby>хижа Тъжа</nearby>
+				<nearby>хижа Соколна</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Плевен</name>
+				<mountain>Стара планина</mountain>
+				<id>4</id>
+				<mountainId>201</mountainId>
+				<telephone>0988777701</telephone>
+				<GPScoordinates>42.74980, 24.89556</GPScoordinates>
+				<altitude>1504м</altitude>
+				<capacity>180 места</capacity>
+				<site href="https://planinite.site-bg.info/page1.php?id=4&amp;nom=14">planinite.site-bg.info</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>заслон Ботев</nearby>
+				<nearby>вр.Ботев/2376м./</nearby>
+				<nearby>хижа Васил Левски</nearby>
+				<nearby>хижа Балкански рози</nearby>
+				<nearby>хижа Хубавец</nearby>
+				<nearby>хижа Рай</nearby>
+				<nearby>хижа Амбарица</nearby>
+				<nearby>хижа Яворова лъка</nearby>
+				<nearby>хижа Зора</nearby>
+				<nearby>хижа Видима</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Рай</name>
+				<mountain>Стара планина</mountain>
+				<id>5</id>
+				<mountainId>201</mountainId>
+				<telephone>0882 966 491</telephone>
+				<GPScoordinates>42.696373, 24.931110</GPScoordinates>
+				<altitude>1405м</altitude>
+				<capacity>120 места</capacity>
+				<site href="http://kalofer.com/stranitsi/accommodations/hija_rai_bg.php">kalofer.com/stranitsi/accommodations/hija_rai_bg.php</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>Водопад Райско пръскало/124м./</nearby>
+				<nearby>хижа Васил Левски</nearby>
+				<nearby>вр.Ботев/2376м./</nearby>
+				<nearby>хижа Плевен</nearby>
+				<nearby>хижа Тъжа</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Мальовица</name>
+				<mountain>Рила</mountain>
+				<id>6</id>
+				<mountainId>202</mountainId>
+				<telephone>0885/232325</telephone>
+				<altitude>1960м</altitude>
+				<capacity>125 места</capacity>
+				<site href="https://planinite.site-bg.info/page1.php?id=1&amp;nom=11">planinite.site-bg.info</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>з-н Страшното езеро</nearby>
+				<nearby>хижа Мечит</nearby>
+				<nearby>Рилски манастир</nearby>
+				<nearby>хижа Рибни езера</nearby>
+				<nearby>хижа Иван Вазов</nearby>
+				<nearby>вр.Мальовица</nearby>
+			</nearbyList>
+		</hut>
+		<hut>
+			<hutInformation>
+				<name>Хижа Безбог</name>
+				<mountain>Пирин</mountain>
+				<id>7</id>
+				<mountainId>203</mountainId>
+				<telephone>088/8286102</telephone>
+				<GPScoordinates>41.73434, 23.52475</GPScoordinates>
+				<altitude>2240м</altitude>
+				<capacity>130 места</capacity>
+				<site href="https://planinite.site-bg.info/page1.php?id=2&amp;nom=1">planinite.site-bg.info</site>
+			</hutInformation>
+			<nearbyList>
+				<nearby>Кременски езера</nearby>
+				<nearby>Поповите езера</nearby>
+				<nearby>вр.Безбог</nearby>
+				<nearby>вр.Полежан</nearby>
+				<nearby>хижа Гоце Делчев</nearby>
+				<nearby>хижа Пирин</nearby>
+				<nearby>хижа Демяница</nearby>
+				<nearby>з-н Тевното езеро</nearby>
+				<nearby>Самодивски връх (Дженгал)</nearby>
+			</nearbyList>
+		</hut>
+	</hutsList>
+	<shelterList>
+		<shelter>
+			<shelterInformation>
+				<name>Заслон Ботев</name>
+				<mountain>Стара планина</mountain>
+				<id>29</id>
+				<mountainId>201</mountainId>
+				<GPScoordinates>42.71870, 24.90412</GPScoordinates>
+				<altitude>2210м</altitude>
+				<site href="https://planinite.site-bg.info/page1.php?id=4&amp;nom=58">planinite.site-bg.info</site>
+			</shelterInformation>
+			<nearbyList>
+				<nearby>вр.Ботев/2376м./</nearby>
+				<nearby>х.Равнец</nearby>
+				<nearby>х.Добрила</nearby>
+				<nearby>х.Плевен</nearby>
+				<nearby>х.Васил Левски</nearby>
+				<nearby>х.Рай</nearby>
+				<nearby>х.Тъжа</nearby>
+			</nearbyList>
+		</shelter>
+		<shelter>
+			<shelterInformation>
+				<name>Заслон Страшното езеро</name>
+				<mountain>Рила</mountain>
+				<id>30</id>
+				<mountainId>202</mountainId>
+				<GPScoordinates>42.180657, 23.399175</GPScoordinates>
+				<altitude>2465м</altitude>
+				<site href="http://www.bulgarian-mountains.com/Huts/Rila/StrashnotoEzero">www.bulgarian-mountains.com/Huts/Rila/StrashnotoEzero</site>
+			</shelterInformation>
+			<nearbyList>
+				<nearby>засл.Кобилино бранище</nearby>
+				<nearby>х.Мечит</nearby>
+				<nearby>х.Рибни езера</nearby>
+				<nearby>х.Мальовица</nearby>
+				<nearby>Рилският манастир</nearby>
+			</nearbyList>
+		</shelter>
+		<shelter>
+			<shelterInformation>
+				<name>Заслон Кончето</name>
+				<mountain>Пирин</mountain>
+				<id>31</id>
+				<mountainId>203</mountainId>
+				<altitude>2782м</altitude>
+				<site href="https://planinite.site-bg.info/page1.php?id=2&amp;nom=17">planinite.site-bg.info</site>
+			</shelterInformation>
+			<nearbyList>
+				<nearby>хижа Яворов</nearby>
+				<nearby>з-н Казана</nearby>
+				<nearby>хижа Бъндерица</nearby>
+				<nearby>вр.Кутело</nearby>
+				<nearby>вр.Вихрен</nearby>
+				<nearby>хижа Вихрен</nearby>
+			</nearbyList>
+		</shelter>
+		<shelter>
+			<shelterInformation>
+				<name>Заслон Тевно езеро</name>
+				<mountain>Пирин</mountain>
+				<id>32</id>
+				<mountainId>203</mountainId>
+				<GPScoordinates>41.6988, 23.4829</GPScoordinates>
+				<altitude>2512м</altitude>
+				<site href="https://planinite.site-bg.info/page1.php?id=2&amp;nom=6">planinite.site-bg.info</site>
+			</shelterInformation>
+			<nearbyList>
+				<nearby>Краледворски циркус</nearby>
+				<nearby>Попово езеро</nearby>
+				<nearby>Самодивски връх (Дженгал)</nearby>
+				<nearby>вр. Момин двор</nearby>
+				<nearby>вр. Каменица</nearby>
+				<nearby>Митрово езеро</nearby>
+				<nearby>Превалски езера</nearby>
+				<nearby>хижа Демяница</nearby>
+				<nearby>хижа Вихрен</nearby>
+				<nearby>хижа Каменица</nearby>
+				<nearby>хижа Яне Сандански</nearby>
+				<nearby>хижа Пирин</nearby>
+				<nearby>хижа Безбог</nearby>
+			</nearbyList>
+		</shelter>
+	</shelterList>
+	<mountainList>
+		<mountainInfo>
+			<mountainName>Стара планина</mountainName>
+			<moun mounRef="Стара планина" mounIdRef="201"/>
+		</mountainInfo>
+		<mountainInfo>
+			<mountainName>Рила</mountainName>
+			<moun mounRef="Рила" mounIdRef="202"/>
+		</mountainInfo>
+		<mountainInfo>
+			<mountainName>Пирин</mountainName>
+			<moun mounRef="Пирин" mounIdRef="203"/>
+		</mountainInfo>
+	</mountainList>
+</hutsInBG>

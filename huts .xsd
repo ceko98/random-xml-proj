@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hutsInBG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="hutsList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="hut">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="hutInformation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" />
+                          <xs:element name="mountain" type="xs:string" />
+                          <xs:element name="id" type="xs:unsignedByte" />
+                          <xs:element name="mountainId" type="xs:unsignedByte" />
+                          <xs:element name="telephone" type="xs:string" />
+                          <xs:element minOccurs="0" name="GPScoordinates" type="xs:string" />
+                          <xs:element name="altitude" type="xs:string" />
+                          <xs:element name="capacity" type="xs:string" />
+                          <xs:element name="site">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="href" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="nearbyList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="nearby" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="shelterList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="shelter">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="shelterInformation">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" />
+                          <xs:element name="mountain" type="xs:string" />
+                          <xs:element name="id" type="xs:unsignedByte" />
+                          <xs:element name="mountainId" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="GPScoordinates" type="xs:string" />
+                          <xs:element name="altitude" type="xs:string" />
+                          <xs:element name="site">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="href" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="nearbyList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="nearby" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="mountainList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="mountainInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="mountainName" type="xs:string" />
+                    <xs:element name="reg">
+                      <xs:complexType>
+                        <xs:attribute name="mounRef" type="xs:string" use="required" />
+                        <xs:attribute name="mounIdRef" type="xs:unsignedByte" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="shelterKey">
+    <xs:selector xpath="hutsInBG/shelterList/shelter/shelterInformation"/>
+    <xs:field xpath="name"/>
+    <xs:field xpath="id"/>
+    </xs:key>
+    <xs:key name="mountainKey">
+      <xs:selector xpath="hutsInBG/hutList/hut/hutInformation"/>
+      <xs:field xpath="mountain"/>
+      <xs:field xpath="mountainId"/>
+    </xs:key>
+    <xs:keyref name="mountainRef" refer="mountainKey">
+      <xs:selector xpath="hutsInBG/mountainList/mountainInfo/moun"/>
+      <xs:field xpath="@mounRef"/>
+      <xs:field xpath="@mounIdRef"/>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
