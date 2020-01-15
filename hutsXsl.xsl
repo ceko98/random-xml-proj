@@ -12,19 +12,19 @@
 			</head>
 			<script>
 		function showHuts() {
-			document.getElementById('hutContainer').style.display = 'inline';
-            document.getElementById('shelterContainer').style.display = 'none';
-			document.getElementById('mountainContainer').style.display = 'none';
+			document.getElementById('hutContainer').style.display = 'grid';
+            document.getElementById('shelterContainer').style.display = 'none'
+			document.getElementById('mountainContainer').style.display = 'none'
     };
 		function showShelters() {
-            document.getElementById('hutContainer').style.display = 'none';
-            document.getElementById('shelterContainer').style.display = 'inline';
-			document.getElementById('mountainContainer').style.display = 'none';
+            document.getElementById('hutContainer').style.display = 'none'
+            document.getElementById('shelterContainer').style.display = 'grid';
+			document.getElementById('mountainContainer').style.display = 'none'
     };
 		function showMountains() {
-            document.getElementById('hutContainer').style.display = 'none';
-            document.getElementById('shelterContainer').style.display = 'none';
-			document.getElementById('mountainContainer').style.display = 'inline';
+            document.getElementById('hutContainer').style.display = 'none'
+            document.getElementById('shelterContainer').style.display = 'none'
+			document.getElementById('mountainContainer').style.display = 'grid';
     }
 			</script>
 			<body>
@@ -38,16 +38,14 @@
 				<button class="button" onclick="showMountains()">
 			Планини
 				</button>
-				<div class="grid">
-					<xsl:apply-templates/>
-				</div>
+				<xsl:apply-templates/>
 			</body>
 		</html>
 	</xsl:template>
 
 
 	<xsl:template match="/hutsInBG/hutsList">
-		<div id="hutContainer">
+		<div class="grid" id="hutContainer">
 			<xsl:for-each select="/hutsInBG/hutsList/hut/hutInformation[id &lt; 11]">
 				<xsl:sort
 					select = "name" data-type="text"
@@ -113,7 +111,7 @@
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/shelterList">
-		<div id="shelterContainer" class="not-preset">
+		<div class="grid" id="shelterContainer">
 			<xsl:for-each select="/hutsInBG/shelterList/shelter/shelterInformation[id &lt; 34]">
 				<xsl:sort
 					select = "name" data-type="text"
@@ -166,7 +164,7 @@
 	</xsl:template>
 
 	<xsl:template match="/hutsInBG/mountainList">
-		<div id="mountainContainer" class="not-preset">
+		<div class="grid" id="mountainContainer">
 			<xsl:for-each select="/hutsInBG/mountainList/mountainInfo">
 				<xsl:variable name="rName">
 					<xsl:value-of select="mountainName"/>
